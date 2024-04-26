@@ -1,0 +1,114 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    /* background: linear-gradient(rgba(69, 48, 48, 0.8), rgba(255, 255, 255, 0.2)), url(bg.jpgs); */
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span {
+    color: #ff3753;
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.launch-time {
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+}
+
+.launch-time span {
+    font-size: 1.5rem;
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.credits {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin: auto;
+    border-top: var(--border);
+    color: #f96478;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.credits span {
+    color: #fff;
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 0 5%;
+        background-image: url(bg1.jpg);
+    }
+    .content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        /* Adjust as needed, or remove if not necessary */
+    }
+    .content button {
+        padding: 10px 20px;
+    }
+    .launch-time div {
+        flex-basis: 80px;
+    }
+    .launch-time div p {
+        font-size: 40px;
+        margin-bottom: 5px;
+        /* Adjust as needed, or remove if not necessary */
+    }
+    .launch-time span {
+        font-size: 1.2rem;
+    }
+    .credits {
+        font-size: 1.2rem;
+    }
+}
